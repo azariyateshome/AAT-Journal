@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Local application data
+data/
+**/data/
+*.db
+*.db-shm
+*.db-wal
+
+# Tooling / OS
+.vscode/
+.idea/
+.DS_Store
+*.log

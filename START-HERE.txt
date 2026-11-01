@@ -1,0 +1,47 @@
+TRADING JOURNAL - START HERE
+
+This version uses SQLite as the application's database.
+
+1. DATABASE
+   - MongoDB is NOT required.
+   - SQLite is stored automatically at:
+       backend/data/trading_journal.db
+   - No database service needs to be installed or started.
+
+2. REQUIREMENT
+   - Node.js 22.5 or newer.
+
+3. START THE APP
+   - Close old Vite/backend terminals.
+   - Double-click start-journal.bat.
+   - Open http://localhost:5173.
+
+   Or use separate terminals:
+   - start-backend.bat
+   - start-frontend.bat
+
+4. HEALTH CHECK
+   Open:
+   http://localhost:5000/api/health
+
+   Expected:
+   {
+     "success": true,
+     "databaseConnected": true,
+     "database": "sqlite"
+   }
+
+5. DATA
+   The frontend reads and writes through the backend API.
+   SQLite is the source of truth for:
+   - Accounts
+   - Rules
+   - Journal entries
+   - Dashboard statistics
+   - Calendar
+   - Account balances
+   - Emotion analytics
+
+6. LOGOS
+   Prop-firm logos are stored in the frontend assets/data catalog.
+   They are presentation assets, not database records.
